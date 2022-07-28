@@ -1,0 +1,32 @@
+﻿@using Eclerx.Program3.RupaliDound.Models
+@model Supplier
+
+<div class="col-6 mb-3">
+    <table class="table table-striped table-hover">
+        <tr>
+            <th class="table-dark">CompanyName</th>
+            <th class="table-dark">Pincode</th>
+            <th class="table-dark">MobileNo</th>
+            <th class="table-dark">City</th>
+            <th class="table-dark">EmailId</th>
+            <th class="table-dark">CreatedDate</th>
+        </tr>
+        @foreach (var sup in Model)
+        {
+    <tr>
+        <td>@sup.CompanyName</td>
+        <td>@sup.Pincode</td>
+        <td>@sup.MobileNo</td>
+        <td>@sup.City</td>
+        <td>@sup.EmailId</td>
+        <td>@sup.CreatedDate</td>
+    </tr>
+        }
+    </table>
+</div>
+    }
+    else
+    {
+<div class="h3">No Records</div>
+    }
+}

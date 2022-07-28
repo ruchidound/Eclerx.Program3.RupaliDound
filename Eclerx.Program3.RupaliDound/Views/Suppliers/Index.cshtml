@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Eclerx.Program3.RupaliDound.Models.Supplier>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-3">
+            <h2>Product Details</h2>
+        </div>
+       
+        <div class="col-3"></div>
+
+        <div class="col-6">
+
+
+            <table class="table">
+                <tr>
+                    <th class="table-dark">CompanyName</th>
+                    <th class="table-dark">Pincode</th>
+                    <th class="table-dark">MobileNo</th>
+                    <th class="table-dark">EmailId</th>
+                    <th class="table-dark">CreatedDate</th>
+                </tr>
+                @foreach (var sup in Model)
+                {
+            <tr>
+                <td>@sup.CompanyName</td>
+                <td>@sup.Pincode</td>
+                <td>@sup.MobileNo</td>
+                <td>@sup.EmailId</td>
+                <td>@sup.CreatedDate</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", "Suppliers", new { id = sup.SupplierId }, new { @class = "btn btn-info" })
+                   
+                </td>
+            </tr>
+                }
+            </table>
+        </div>
+
+    </div>
+</div>

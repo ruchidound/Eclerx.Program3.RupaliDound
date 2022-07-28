@@ -1,0 +1,58 @@
+﻿@using Eclerx.Program3.RupaliDound.Models
+@model Supplier
+@{
+    ViewBag.Title = "InsertRecords";
+}
+
+<h2>InsertRecords</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                <div class="mb-2">
+                    @Html.LabelFor(p => p.CompanyName)
+                    @Html.TextBoxFor(p => p.CompanyName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.CompanyName)
+                </div>
+                <div class="mb-2">
+                    @Html.LabelFor(p => p.ContactName)
+                    @Html.TextBoxFor(p => p.ContactName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.ContactName)
+                </div>
+                <div class="mb-2">
+                    @Html.LabelFor(p => p.Address)
+                    @Html.TextBoxFor(p => p.Address, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.Address)
+                </div>
+                <div class="mb-2">
+                    @Html.LabelFor(p => p.City)
+                    @Html.TextBoxFor(p => p.City, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.City)
+                </div>
+                <div class="mb-2">
+                    @Html.LabelFor(p => p.Pincode)
+                    @Html.TextBoxFor(p => p.Pincode, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.Pincode)
+                </div>
+                <div class="mb-2">
+                    @Html.LabelFor(p => p.MobileNo)
+                    @Html.TextBoxFor(p => p.MobileNo, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.MobileNo)
+                </div>
+                <div class="mb-2">
+                    @Html.LabelFor(p => p.EmailId)
+                    @Html.TextBoxFor(p => p.EmailId, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.EmailId)
+                </div>
+                <div class="mb-2">
+                    <button type="submit" class="btn btn-info">Save</button>
+                
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eclerx.Program3.RupaliDound", "Eclerx.Program3.RupaliDound\Eclerx.Program3.RupaliDound.csproj", "{FEE9518D-0AE1-4FB4-944C-C0ED6B7C9077}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEE9518D-0AE1-4FB4-944C-C0ED6B7C9077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE9518D-0AE1-4FB4-944C-C0ED6B7C9077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE9518D-0AE1-4FB4-944C-C0ED6B7C9077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE9518D-0AE1-4FB4-944C-C0ED6B7C9077}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C5BD96E-CCB0-4476-BE0D-9D0567BAAA21}
+	EndGlobalSection
+EndGlobal

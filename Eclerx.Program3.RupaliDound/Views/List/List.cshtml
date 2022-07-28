@@ -1,0 +1,34 @@
+﻿@using Eclerx.Program3.RupaliDound.Models
+@model Supplier
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h2>Search Product By City</h2>
+        </div>
+        <hr />
+
+        @using (Html.BeginForm("GetProducts", "Home", FormMethod.Get))
+        {
+            <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Select a City</label>
+                <div class="mb-2">
+                    @Html.LabelFor(p => p.City)
+                    @Html.DropDownListFor(p => p.City, new SelectList(ViewBag.Suppliers, "SupplierId", "City"), "--Select--", new { @class = "form-select" })
+                    @Html.ValidationMessageFor(p => p.City)
+                </div>
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-success">Search</button>
+                </div>
+            </div>
+        }
+
+        <div>
+            @Html.Partial("_CityDetailsPartial", Model)
+
+        </div>
+    </div>
+</div>
